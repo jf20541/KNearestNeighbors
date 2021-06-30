@@ -1,5 +1,3 @@
-# K_NearestNeighbors
-
 # KNearestNeighbors
 
 
@@ -57,6 +55,9 @@ K-Nearest Neighbor Accuracy: 93.33%
 Hamming Distance
 K-Nearest Neighbor Accuracy: 93.33%
 ```
+
+![alt text](https://github.com/jf20541/KNearestNeighbors/blob/main/plots/ErrorRateKValue.png)
+
 
 ## Run
 In a terminal or command window, navigate to the top-level project directory `KNearestNeighbors/` (that contains this README) and run the following command:
