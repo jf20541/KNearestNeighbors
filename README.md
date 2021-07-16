@@ -1,6 +1,5 @@
 # KNearestNeighbors
 
-
 ## Objective
 Optimize two hyperparameters (K-values and Distance Function) for K-Nearest Neighbor Model.
 
@@ -18,9 +17,8 @@ Non-Parametric: KNN makes no assumptions about the functional form of the proble
 Avoid\
 Curse of Dimensionality: As the number of dimensions increases the volume of the input space increases at an exponential rate
 
+## Distance Function & Mathematics
 
-
-## Distance Function
 - Euclidean Distance\
 ![](https://latex.codecogs.com/gif.latex?d%28x%2C%20y%29%3D%20%5Csqrt%7B%5Csum_%7Bi%3D1%7D%5E%7Bn%7D%28x_%7Bi%7D-y_%7Bi%7D%29%5E%7B2%7D%7D)
 - Minkowski Distance\
@@ -57,13 +55,6 @@ K-Nearest Neighbor Accuracy: 93.33%
 ```
 
 ![alt text](https://github.com/jf20541/KNearestNeighbors/blob/main/plots/ErrorRateKValue.png)
-
-
-## Run
-In a terminal or command window, navigate to the top-level project directory `KNearestNeighbors/` (that contains this README) and run the following command:
-```bash
-pip install --upgrade pip && pip install -r requirements.txt
-``` 
 
 ## Data
 ```bash
