@@ -14,8 +14,8 @@ Lazy Learning: Training is not required and all of the work happens at the time 
 Instance-Based Learning: Raw training instances are used to make predictions.\
 Non-Parametric: KNN makes no assumptions about the functional form of the problems being solved.
 
-Avoid\
-Curse of Dimensionality: As the number of dimensions increases the volume of the input space increases at an exponential rate
+### AVOID
+- Curse of Dimensionality: As the number of dimensions increases the volume of the input space increases at an exponential rate
 
 ## Repository File Structure
 
@@ -50,29 +50,18 @@ K-Nearest Neighbor Accuracy: 93.33%
 Hamming Distance
 K-Nearest Neighbor Accuracy: 93.33%
 ```
-
-## Metric
-![](https://latex.codecogs.com/gif.latex?Accuracy%3D%5Cfrac%7Btp&plus;tn%7D%7B%28tp%20&plus;%20tn%29&plus;%28fp-fn%29%29%7D)\
-tp = True Positive\
-tn = True Negative\
-fp = False Positive\
-fn = False Negative
-
 ## Data
 ```bash
-Target Class
+Target Class:
+Iris-setosa       float64
+Iris-versicolor   float64
+Iris-virginica    float64
 
-Iris-setosa:      float64
-Iris-versicolor:  float64
-Iris-virginica:   float64
-```
-```bash
-Features     (normalized)
-
-Sepal-width:      float64
-Sepal-length:     float64
-Petal-width:      float64
-Petal-length:     float64
+Features:     
+Sepal-width       float64
+Sepal-length      float64
+Petal-width       float64
+Petal-length      float64
 ```
 ## Sources
 https://www.kdnuggets.com/2020/11/most-popular-distance-metrics-knn.html
