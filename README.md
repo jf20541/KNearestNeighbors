@@ -58,8 +58,6 @@ tn = True Negative\
 fp = False Positive\
 fn = False Negative
 
-![alt text](https://github.com/jf20541/KNearestNeighbors/blob/main/plots/ErrorRateKValue.png)
-
 ## Data
 ```bash
 Target Class
