@@ -14,37 +14,34 @@ Lazy Learning: Training is not required and all of the work happens at the time 
 Instance-Based Learning: Raw training instances are used to make predictions.\
 Non-Parametric: KNN makes no assumptions about the functional form of the problems being solved.
 
-Avoid\
-Curse of Dimensionality: As the number of dimensions increases the volume of the input space increases at an exponential rate
+### AVOID
+- Curse of Dimensionality: As the number of dimensions increases the volume of the input space increases at an exponential rate
 
-## Distance Function & Mathematics
+## Repository File Structure
+
+    ├── src          
+    │   └── main.py              # Optimize two hyperparameters K-values with variants of Distance Function for K-Nearest Neighbor Model
+    ├── plots
+    │   └── ErrorRatekValue.png  # Error Rate K-Value
+    ├── requierments.txt         # Packages used for project
+    └── README.md
+
+## Outputs & Distance Functions
 
 - Euclidean Distance\
 ![](https://latex.codecogs.com/gif.latex?d%28x%2C%20y%29%3D%20%5Csqrt%7B%5Csum_%7Bi%3D1%7D%5E%7Bn%7D%28x_%7Bi%7D-y_%7Bi%7D%29%5E%7B2%7D%7D)
-- Minkowski Distance\
-![](https://latex.codecogs.com/gif.latex?d%28x%2C%20y%29%3D%20%5Cleft%20%28%20%5Csum_%7Bi%3D1%7D%5E%7Bn%7D%5Cleft%7Cx_%7Bi%7D-y_%7Bi%7D%20%5Cright%20%7C%5E%7Bp%7D%5Cright%29%5E%7B1/p%7D)
-- Manhattan Distance\
-![](https://latex.codecogs.com/gif.latex?d%28x%2Cy%29%3D%20%5Csum_%7Bi%3D1%7D%5E%7Bn%7D%5Cleft%20%7C%20x_%7Bi%7D-%20y_%7Bi%7D%20%5Cright%20%7C)
-- Hamming Distance\
-![]()
-
-
-## Metric
-![](https://latex.codecogs.com/gif.latex?Accuracy%3D%5Cfrac%7Btp&plus;tn%7D%7B%28tp%20&plus;%20tn%29&plus;%28fp-fn%29%29%7D)\
-tp = True Positive\
-tn = True Negative\
-fp = False Positive\
-fn = False Negative
-
-## Output
 ```bash
 Euclidean Distance
 K-Nearest Neighbor Accuracy: 96.67%
 ```
+- Minkowski Distance\
+![](https://latex.codecogs.com/gif.latex?d%28x%2C%20y%29%3D%20%5Cleft%20%28%20%5Csum_%7Bi%3D1%7D%5E%7Bn%7D%5Cleft%7Cx_%7Bi%7D-y_%7Bi%7D%20%5Cright%20%7C%5E%7Bp%7D%5Cright%29%5E%7B1/p%7D)
 ```bash
 Minkowski Distance
 K-Nearest Neighbor Accuracy: 96.67%
 ```
+- Manhattan Distance\
+![](https://latex.codecogs.com/gif.latex?d%28x%2Cy%29%3D%20%5Csum_%7Bi%3D1%7D%5E%7Bn%7D%5Cleft%20%7C%20x_%7Bi%7D-%20y_%7Bi%7D%20%5Cright%20%7C)
 ```bash
 Manhattan Distance
 K-Nearest Neighbor Accuracy: 93.33%
@@ -53,24 +50,18 @@ K-Nearest Neighbor Accuracy: 93.33%
 Hamming Distance
 K-Nearest Neighbor Accuracy: 93.33%
 ```
-
-![alt text](https://github.com/jf20541/KNearestNeighbors/blob/main/plots/ErrorRateKValue.png)
-
 ## Data
 ```bash
-Target Class
+Target Class:
+Iris-setosa       float64
+Iris-versicolor   float64
+Iris-virginica    float64
 
-Iris-setosa:      float64
-Iris-versicolor:  float64
-Iris-virginica:   float64
-```
-```bash
-Features     (normalized)
-
-Sepal-width:      float64
-Sepal-length:     float64
-Petal-width:      float64
-Petal-length:     float64
+Features:     
+Sepal-width       float64
+Sepal-length      float64
+Petal-width       float64
+Petal-length      float64
 ```
 ## Sources
 https://www.kdnuggets.com/2020/11/most-popular-distance-metrics-knn.html
