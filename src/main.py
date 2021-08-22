@@ -65,8 +65,9 @@ class KNearestNeighbors:
 
 
 if __name__ == "__main__":
+    # load dataset
     iris = datasets.load_iris()
-    # normalize features
+    # normalize features and define target values
     features = normalize(iris.data)
     targets = iris.target
     x_train, x_test, y_train, y_test = train_test_split(
