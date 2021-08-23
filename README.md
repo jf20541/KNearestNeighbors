@@ -63,6 +63,3 @@ Sepal-length      float64
 Petal-width       float64
 Petal-length      float64
 ```
-## Sources
-https://www.kdnuggets.com/2020/11/most-popular-distance-metrics-knn.html
-https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4978658/#:~:text=K%2Dnearest%20neighbor%20(k%2D,decide%20the%20final%20classification%20output.
